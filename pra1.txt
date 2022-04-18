@@ -1,0 +1,33 @@
+Create Table A1 (Aid int, Name varchar(20))
+Create Table B1 (Bid int, Name varchar(20),Aid int)
+Create Table C1 (Cid int, Name varchar(20),Bid int)
+insert Into A1 values(1,'Sam')
+insert Into A1 values(2,'tom')
+insert Into A1 values(3,'harry')
+insert Into A1 values(4,'katich')
+insert Into A1 values(5,'kate')
+
+
+insert Into B1 values(11,'harry',3)
+insert Into B1 values(12,'katich',4)
+insert Into B1 values(13,'kate',5)
+insert Into B1 values(14,'mate',6)
+insert Into B1 values(15,'sat',7)
+
+insert Into C1 values(21,'harry',13)
+insert Into C1 values(22,'katich',14)
+insert Into C1 values(23,'kate',15)
+insert Into C1 values(24,'mate',16)
+insert Into C1 values(25,'sat',17)
+
+SELECT * FROM A1;
+SELECT * FROM B1;
+SELECT * FROM C1;
+
+SELECT * from A1 INNER JOIN B1 ON A1.Aid=B1.Bid;
+
+
+
+
+
+
